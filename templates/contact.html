@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ascend Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Racing+Sans+One&display=swap" rel="stylesheet">  
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Ascend Gym Logo" class="logo"></a>
+    </div>
+    
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('membership') }}">Membership</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+    </nav>
+</header>
+    <div class="abouth1">
+        <h1>Contact Ascend Gym</h1>
+        <p>We would love to hear from you! Whether you have questions about our services, membership plans, or anything else, feel free to reach out.</p>
+        <img src="{{ url_for('static', filename='images/contact.png') }}" alt="Contact Us Background" class="abtimg">
+    </div>
+    <div class="abouth2">
+        <h2>Get in Touch</h2>
+        <p>Email: info@ascendgym.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Address: 123 Fitness Street, Health City, Pakistan</p>
+    </div>
+    <div class="abouth3">
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <label for="membership-type">Membership Type:</label>
+            <select id="membership-type" name="membership-type">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="family">Family</option>
+            </select><br>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+<footer>
+    <p>&copy; 2026 Ascend Gym. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

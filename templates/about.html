@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascend Gym - About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Racing+Sans+One&display=swap" rel="stylesheet">   
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Ascend Gym Logo" class="logo"></a>
+    </div>
+    
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('membership') }}">Membership</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+    </nav>
+</header>
+
+
+
+    <div class="abouth1">
+        <div class="text">
+            <h1>About Ascend Gym</h1>
+            <p>At Ascend Gym, we are dedicated to helping you achieve your fitness goals. Our mission is to provide a supportive and motivating environment where individuals can improve their health and well-being.</p>
+        </div>
+        <img src="{{ url_for('static', filename='images/about.png') }}" alt="About Us Background" class="abtimg">
+    </div>
+    <div class="abouth2">
+        <h2>Our History</h2>
+        <p>Founded in 2010, Ascend Gym has grown from a small local gym to a leading fitness center in the community. We pride ourselves on our state-of-the-art facilities and experienced staff.</p>
+    </div>
+
+    <div class="abouth3">
+        <h2>Our Team</h2>
+        <p>Our team of certified trainers and nutritionists are here to guide you every step of the way. Whether you're a beginner or an experienced athlete, we have the expertise to help you succeed.</p>
+    </div>
+    <div class="abouth4">    
+    <h2>Our Values</h2>
+        <ul>
+            <li>Commitment to Excellence</li>
+            <li>Community Support</li>
+            <li>Inclusivity and Diversity</li>
+            <li>Continuous Improvement</li>
+        </ul>
+    </div>
+<footer>
+    <p>&copy; 2026 Ascend Gym. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>

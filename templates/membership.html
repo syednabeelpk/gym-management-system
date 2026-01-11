@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Ascend Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Racing+Sans+One&display=swap" rel="stylesheet">  
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Ascend Gym Logo" class="logo"></a>
+    </div>
+    
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('membership') }}">Membership</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+    </nav>
+</header>
+    <div class="abouth1">
+        <img src="{{url_for('static', filename='images/membership.png')}}" alt="Membership Background" class="abtimg">
+        <h1>Membership Plans</h1>
+        <p>Choose the perfect membership plan to fit your fitness goals and lifestyle at Ascend Gym.</p>
+    </div>
+    <div class="abouth2">
+        <h2>Basic Plan</h2>
+        <ul>
+            <li>Access to gym facilities during staffed hours</li>
+            <li>Free fitness assessment</li>
+            <li>Access to locker rooms</li>
+        </ul>
+        <p>Price: 5000pkr/month</p>
+        <a href="contact.html" class="btn">Join Now</a>
+    </div>
+    <div class="abouth3">
+        <h2>Premium Plan</h2>
+        <ul>
+            <li>24/7 access to gym facilities</li>
+            <li>5 personal training sessions per month</li>
+            <li>Access to all group classes</li>
+            <li>Nutrition counseling</li>
+        </ul>
+        <p>Price: 10000pkr/month</p>
+        <a href="contact.html" class="btn">Join Now</a>
+    </div>
+    <div class="abouth4">
+        <h2>Family Plan</h2>
+        <ul>
+            <li>All benefits of the Premium Plan</li>
+            <li>Up to 4 family members included</li>
+            <li>Family fitness workshops</li>
+        </ul>
+        <p>Price: 15000pkr/month</p>
+        <a href="contact.html" class="btn">Join Now</a>
+    </div>
+<footer>
+    <p>&copy; 2026 Ascend Gym. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
